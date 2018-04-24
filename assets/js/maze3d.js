@@ -37,9 +37,9 @@
         messageContainer.style.border = "1px solid #333";
 
         var message = document.createElement("h1");
-        message.innerHTML = "Use Up/Down/Left/Right arrows or the virtual pad to move and rotate the camera";
+        message.innerHTML = "Use the Arrow Keys, WASD, or Virtual Keypad in the Corner to Move and Rotate the Camera";
         message.style.textAlign = "center";
-        message.style.color = "#ddd";
+        message.style.color = "#3f3";
         message.style.padding = "15px";
         messageContainer.appendChild(message);
 
@@ -47,7 +47,8 @@
 
         messageContainer.style.left = (window.innerWidth / 2 - messageContainer.offsetWidth / 2) + "px";
         messageContainer.style.top = (window.innerHeight / 2 - messageContainer.offsetHeight / 2) + "px";
-
+	
+		
         var timer = setTimeout(function() {
             clearTimeout(timer);
             document.body.removeChild(messageContainer);
@@ -134,7 +135,7 @@
         }
 
         // Lights
-        var directionalLight = new THREE.HemisphereLight(0x192F3F, 0x28343A, 2);
+        var directionalLight = new THREE.HemisphereLight(0x192F3F, 0xFFFFFF, 2);
         directionalLight.position.set(1, 1, 0);
         scene.add(directionalLight);
     }

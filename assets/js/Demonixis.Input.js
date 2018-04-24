@@ -70,6 +70,10 @@ Demonixis.Input = function() {
         down: false,
         left: false,
         right: false,
+		w: false,
+		s: false,
+		a: false,
+		d: false,
         upLeft: false,
         upRight: false,
         downLeft: false,
@@ -199,6 +203,7 @@ Demonixis.Input.prototype._onKeyStateChange = function(event, pressed) {
             break; // Touche 9
         case 65:
             this.keys.a = pressed;
+			this.keys.left = pressed;
             break; // Touche A
         case 65:
             this.keys.b = pressed;
@@ -208,6 +213,7 @@ Demonixis.Input.prototype._onKeyStateChange = function(event, pressed) {
             break; // Touche C
         case 68:
             this.keys.d = pressed;
+			this.keys.right = pressed;
             break; // Touchd D
         case 69:
             this.keys.e = pressed;
@@ -253,6 +259,7 @@ Demonixis.Input.prototype._onKeyStateChange = function(event, pressed) {
             break; // Touche R
         case 83:
             this.keys.s = pressed;
+			this.keys.down = pressed;
             break; // Touche S
         case 84:
             this.keys.t = pressed;
@@ -265,6 +272,7 @@ Demonixis.Input.prototype._onKeyStateChange = function(event, pressed) {
             break; // Touche V
         case 87:
             this.keys.w = pressed;
+			this.keys.up = pressed;
             break; // Touche W
         case 88:
             this.keys.x = pressed;
