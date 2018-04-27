@@ -12,8 +12,13 @@ Licence : LGPL V2
 2.0 UPDATE:
 
 Author: Thomas Smith
+
 Added A Level 7
+
 Adjusted World Brightness
+
 Swapped Wall and Roof Graphics
+
 Added WASD Movment
+
 Updated Vitual Pad Graphics
