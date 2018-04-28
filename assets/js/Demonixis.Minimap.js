@@ -48,7 +48,7 @@ Demonixis.Gui.MiniMap = function(width, height, parent) {
         } else if (id == 'J') {
             this.ctx.fillStype = "yellow";
         } else if (id == 'A') {
-            this.ctx.fillStyle = "blue";
+            this.ctx.fillStyle = " blue";
         } else {
             this.ctx.fillStyle = "rgb(200, 200, 200)";
         }
@@ -59,7 +59,7 @@ Demonixis.Gui.MiniMap = function(width, height, parent) {
     this.update = function(newPlayerPosition) {
         this.ctx.fillStyle = "white";
         this.ctx.fillRect(this.playerPosition.x * this.blockSize.width, this.playerPosition.y * this.blockSize.height, this.blockSize.width, this.blockSize.height);
-        this.ctx.fillStyle = "red";
+        this.ctx.fillStyle = "green";
         this.ctx.fillRect(newPlayerPosition.x * this.blockSize.width, newPlayerPosition.y * this.blockSize.height, this.blockSize.width, this.blockSize.height);
         this.playerPosition = newPlayerPosition;
     };
