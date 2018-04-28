@@ -24,3 +24,9 @@ Added WASD Movment
 Updated Vitual Pad Graphics
 
 Updated Sound Effects
+
+Author: Ian Michael Jesu Alvarez
+
+Added Level 7
+
+Added Level 8
