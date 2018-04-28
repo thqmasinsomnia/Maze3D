@@ -6,8 +6,8 @@ Demonixis.Gui.MiniMap = function(width, height, parent) {
     this.width = width;
     this.height = height;
     this.blockSize = {
-        width: 5,
-        height: 5
+        width: 0,
+        height: 0
     };
 
     this.playerPosition = {
